@@ -1,0 +1,9 @@
+line --> 4 error--> label being used more than one time
+line --> 5 error--> no such label
+line --> 6 error--> label/operand name missing/invalid
+line --> 7 error--> Missing operand
+line --> 8 error--> unexpected operand detected
+line --> 9 error--> extra on end of line
+line --> 10 error--> Invalid label name
+line --> 11 error--> bogus mneumonic 
+line --> 12 error--> bogus mneumonic 

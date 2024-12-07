@@ -1,0 +1,120 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR: Manuj Kumar Grover (2301CS28)
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS2102 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+Files:
+==========
+*All the files i submitted, asm.cpp , emu.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the four test examples given (test1 to test4) and bubblesort has also been uploaded. They are test1(3 output files and 1screenshot), test2(1 output file and 1 screenshot), test3(3 output files and 1 screenshots), 
+test4(3 output files and 1 screenshots) and MyBubbleSort(3 output files and 2 screenshot) and two additional custom alogrithms reverse array(asm code, 3 output files and 1 screenshot) and kadane algorithm (asm code, 3 output files and 1 screenshot). All the test files have been tested and work properly. 
+
+
+Compilation instructions:
+=========================
+    user will be asked about required input
+
+Assumptions:
+============
+    * Mnemonics named “data” and "SET" are always used at the end of assembly code.
+    * Listing file (.l) and Object file(.o) are generated only when there are no errors in the input Assembly code,  
+      otherwise only Error file (.log) is generated.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+    
+    * Every instruction is implemented.
+    * It contains a tableData data structure to store the each instruction efficiently.
+    * It is a 2 pass assembler (implemented in asm.cpp)
+    * outputs the required correct information in the form of three files
+       *  .log file for errors and warnings
+       *  .l file for listing 
+       *  .o file for machine code object
+    * All important errors are diagnosed and corresponding error file gets generated (named logfile.log)
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* Advanced listing file gets generated. (named listCode.l)
+		* assembles test programs (including bubble sort)
+        * Machine code object file gets generated (named machineCode.o)
+	* SET instruction is also implemented (which carries extra marks).
+    *  Code is written in C++ with optimum time and space complexity.
+    * Additional tests with outputs is also included
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested  five examples(4 test files and bubblesort) shown as bellow. The errors only occurred in the file test2.asm and the program immediately stopped on the second pass. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example.
+1)
+#Input: test1.asm
+#Output: 
+a. test1.lst 
+b. test1.log (without any error messages)
+c. test1.o
+
+2)
+#Input: test2.asm
+#Output: 
+a. test2.log (with error messages shown as below and also in log file)
+
+error messages:
+line --> 4 error--> label being used more than one time
+line --> 5 error--> no such label
+line --> 6 error--> label/operand name missing/invalid
+line --> 7 error--> Missing operand
+line --> 8 error--> unexpected operand detected
+line --> 9 error--> extra on end of line
+line --> 10 error--> Invalid label name
+line --> 11 error--> bogus mneumonic 
+line --> 12 error--> bogus mneumonic 
+
+
+3)
+#Input:asm test3.asm
+#Output: 
+a. test3.lst 
+b. test3.log (without any error messages)
+c. test3.o
+
+4)
+#Input: test4.asm
+#Output: 
+a. test4.lst 
+b. test4.log (without any error messages)
+c. test4.o
+
+5)
+#Input: bubble_sort.asm
+#Output: 
+a. bubble_sort.lst 
+b. bubble_sort.log (without any error messages)
+c. bubble_sort.o
+
+Additional Tests:
+=================
+6) 
+#Input: custom_test1.asm
+#Output:
+a. custom_test1.lst 
+b. custom_test1.log 
+c. custom_test1.o
+
+7) 
+#Input: custom_test2.asm
+#Output:
+a. custom_test2.lst
+b. custom_test2.log (without any error messages)
+c. custom_test2.o
